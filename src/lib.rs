@@ -11,6 +11,7 @@ pub type Length = Quantity<P1, Z0>;
 pub type Time = Quantity<Z0, P1>;
 pub type Velocity = Quantity<P1, N1>;
 pub type Ratio = Quantity<Z0, Z0>;
+pub type Angle = Ratio; // NOTE: I guess it depends on the context of the application whether this is desirable or a potential disaster.
 
 unit!(Second (to_base = 1.0) for Time);
 unit!(Hour (to_base = 3600.0) for Time);
